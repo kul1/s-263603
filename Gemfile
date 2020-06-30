@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 gem 'jinda', path: '/Users/kul/mygem/jinda'
-
+gem 'flexbox-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 # Use Puma as the app server
@@ -79,6 +79,7 @@ group :development, :test do
   gem 'guard'
   gem 'guard-rspec'
   gem 'guard-minitest'
+  gem 'guard-livereload'
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'rb-fsevent'
